@@ -2,17 +2,18 @@ plugins {
     java
 }
 
-group = "de.royzer"
-version = "1.0"
+group = "de.icrayix"
+version = "1.1"
 
 repositories {
-    maven("https://repo.papermc.io/repository/maven-public/")
+    mavenCentral()
+    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    compileOnly("org.bukkit:bukkit:1.13.2-R0.1-SNAPSHOT")
 }
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(8))
 }
