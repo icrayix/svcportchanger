@@ -1,0 +1,7 @@
+main: de.icrayix.svc_port_changer.SvcPortChanger
+name: SVCPortChanger
+version: 1.0.0
+api-version: 1.13
+author: icrayix
+loadbefore:
+  - voicechat
